@@ -57,6 +57,7 @@ class InspektorApp(object):
         self.args = self.arg_parser.parse_args()
 
     def run(self):
+        return
         try:
             return self.args.func(self.args)
         except KeyboardInterrupt:
